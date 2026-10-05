@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------------------------------------------------ستايل اول بيدج --------------------------------------------*/
+
+
+
+
+body{
+    background-color: rgb(232, 216, 237); /*لون الباك جراوند بتاع البيدج كلها*/
+    
+}
+
+
+header{
+    display: flex;    /*العناصر تترتب جنب بعض*/
+    justify-content:space-between;        /*يخلي المسافة متساوية بين العناصر*/
+    align-items: center;     /*العناصر تبقى متساوية افقي*/   
+    height: 100px;
+    width: 100%;  
+    background-color: rgb(131, 69, 247);   /*لون الباك جراوند بتاع كل عنصر*/
+    position: fixed;    /*علشان الهيدر يثبت مكانه فوق وانا بسكرول*/
+    top: 0;
+    z-index: 999999;        /*لما اسكرول الكلام مش يطلع فوق الهيدر*/
+
+}
+#things{
+    display: flex;
+    gap: 35px;     
+    margin-left: 600px;     /*المسافة من اليسار*/
+}
+
+#things a{
+    gap: 20px;
+    text-decoration: none;      /*يشيل الخط من تحت الكلام*/
+    font-size: 25px;
+    color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(94, 60, 162);
+    border-radius: 30px;
+}
+#things a:hover{        /*علشان لما اضغط على الزر يغير لونه*/
+    background-color: rgb(92, 16, 163);
+}
+
+
+
+.h_header{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#menu{
+    width: auto;
+    cursor: pointer;
+    margin: 20px; 
+    display: none;
+    position: absolute;
+    padding:15px;
+    background-color: rgb(232, 221, 240);
+    top: 80px;
+    right: -25px;
+    border-radius: 20px;
+}
+#menu a{
+    display: block;
+    color: black;
+    margin: 10px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#container{
+    display: block;
+    cursor: pointer;
+}
+#container span{
+    display: block;
+    height: 5px;
+    background: black;
+    margin: 6px 0;
+    border-radius: 10px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+img{
+    margin-top: 100px;
+}
+
+#btn{
+    display: flex;
+    flex-direction: column;  /*يخليهم على شكل أعمدة*/
+    align-items: center;
+    position: absolute;   /*علشان تتحط على الصوره عادي*/
+    top: 400px;
+    left: 570px
+}
+#btn h2{
+    margin-bottom: 20px;
+    margin-left: -60px;
+    font-size: 65px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#btn p{
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-right: 75px;
+    text-align: center;
+    color: rgb(83, 81, 81);
+    
+}
+#joinnow{
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: aliceblue;
+    cursor: pointer;
+    margin-right: 50px;
+    text-decoration: none;    /*سشيل الخط من تحت الكلام*/
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+#joinnow:hover{
+    background-color: rgb(101, 18, 180);
+}
+
+
+#futures{
+    align-items: center;
+    text-align: center;
+    margin-top: -250px;
+}
+#futures h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 300px;
+    text-align: center;
+    font-size: 75px;
+}
+
+.futures{
+    display: flex;      /*يخليهم كلهم جنب بعض*/
+}
+#who{
+    margin-top: -20px;
+}
+
+#who h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+#who p{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(85, 2, 162);
+    padding-left: 25px;
+    width: 300px;
+    margin-left: 100px;
+}
+
+#img-when{
+    margin-top: 20px;
+}
+
+
+#when h3{
+    display: block;
+    margin-top:1px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#when p{
+     width: 300px;
+     margin-left: 100px;
+     font-size: 20px;
+     font-weight: bold;
+     color: rgb(85, 2, 162);
+}
+
+
+
+#img-vision{
+    margin-top:20px;
+}
+#vision h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+#vision p{
+    width: 300px;
+     margin-left: 100px;
+     font-size: 20px;
+     font-weight: bold;
+     color: rgb(85, 2, 162);
+}
+
+#contactus{
+    text-align: center;
+    font-size: 25px;
+}
+#social{
+    display: flex;   /*يخليهم جنب بعض*/
+}
+#imgwa{
+    width: 50px;
+}
+#imgph{
+    width: 50px;
+}
+#imginst{
+    width: 50px;
+}
+#social{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+}
+#phone{
+display: flex;
+flex-direction: column;     /*يخليهم على شكل أعمدة*/
+}
+
+#whatsapp{
+display: flex;
+flex-direction: column;
+}
+#instgram{
+display: flex;
+flex-direction: column;
+}
+#social a{
+    text-decoration: none;
+    padding: 7px;
+    background-color: rgb(132, 0, 255);
+    border-radius: 100px;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+}
+#whatsapp a{
+    margin-left: -30px;
+}
+#instgram a{
+    margin-left: -25px;
+}
+#social a:hover{
+    background-color: rgb(121, 31, 206);
+}
+
+footer{
+    
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*------------------------------------------------------------ صفحة ال LOGIN----------------------------------------------------------------------*/
+
+
+#img-person{
+    width: 800px;
+    margin-top: -10px;
+}
+
+#log{
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;    /*يخلي الملام على الصورة عادي*/
+    top: 400px;
+    left: 1000px
+}
+#log input{
+    display: flex;
+    height: 50px;
+    width: 250px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#log button{
+    cursor: pointer;
+    padding:15px;
+    font-size: 25px;
+   text-align: center;
+   align-content: center;
+   background-color: rgb(123, 229, 16);
+   border-radius: 10px;
+}
+
+
+
+
+

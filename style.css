@@ -1,0 +1,605 @@
+
+
+/*--------------------------------------------ستايل ال TABLE--------------------------------------------------*/
+
+
+header{
+    display: flex;    
+    justify-content:space-between;       
+    align-items: center;        
+    height: 100px;
+    width: 100%;  
+    background-color: rgb(182, 68, 231);   
+    position: fixed;    
+    top: 0;
+    z-index: 999999;       
+}
+#things{
+    display: flex;
+    gap: 35px;     
+    margin-left: 600px;     
+}
+
+#things a{
+    margin: 25px;
+    text-decoration: none;     
+    font-size: 25px;
+    color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(94, 60, 162);
+    border-radius: 30px;
+}
+
+
+#things a:hover{        
+    background-color: rgb(92, 16, 163);
+}
+
+
+
+.h-header{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    font-size: 50px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+
+
+.data-table{ 
+    width: 70%;
+    margin: 30px auto;
+    margin-top: 150px;
+    border-collapse: collapse;     /* يفصل بين كل element والتاني*/
+    font-family: sans-serif;
+}
+
+
+body{
+    background-color: rgb(186, 167, 221);
+}
+
+
+.data-table th {
+    background-color: rgb(157, 101, 245);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.data-table, th,td{
+    border: 3px solid black;
+}
+
+
+.data-table td{
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid rgb(8, 8, 8);
+    font-weight: bold;
+}
+
+
+/*-----------------------------------------------------ستايل ال EDIT-----------------------------------------------*/
+
+
+.edit {
+    border: none;
+    padding: 7px 11px;
+    border-radius: 6px;
+    background-color: rgb(44, 222, 24);
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+}
+.edit:hover{
+     background-color: rgb(24, 200, 5);
+}
+
+
+/*--------------------------------------------------ستايل ال DELET----------------------------------------------------*/
+
+
+
+.delete{
+    border: none;
+    padding: 7px 11px;
+    border-radius: 6px;
+    background-color: rgb(218, 43, 31);
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.delete:hover{
+    background-color: rgb(198, 36, 36);
+}
+
+
+.data-table thead tr {
+    height: 60px;
+}
+
+
+.data-table tbody {
+    background-color: rgba(190, 176, 153, 0.27);
+}
+
+
+
+/*------------------------------------ستايل ال MODAL---------------------------------------*/
+
+
+/*ستايل مودال ال edit*/
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ستايل الكونتنت بتاع المودال بتاع ال edit*/
+.modal-content {
+    background-color: rgb(144, 101, 219);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/*ستايل ال inputs*/
+.modal-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*ستايل ال gender*/
+#editGenderInput{
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(0, 0, 0);
+}
+
+
+#gender{
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(0, 0, 0);
+}
+
+/*ستايل الاوبشنز بتاع ال gender*/
+option{
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/*ستايل ال save-btn*/
+.btn-save {
+    background-color: rgb(44, 222, 24);
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+.btn-save:hover{
+    background-color: rgb(24, 200, 5);
+}
+
+
+
+/*ستايل ال cancel-btn*/
+.btn-cancel {
+    background-color: rgb(218, 43, 31);
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+
+.btn-cancel:hover{
+     background-color: rgb(198, 36, 36);
+}
+
+
+
+/*----------------------------------ستايل الجزء بتاع ال add-----------------------------------------------------*/
+
+
+
+/*ستايل زر ال add*/
+#add-btn {
+    background-color: rgb(121, 79, 194);
+    color: rgb(255, 251, 251);
+    font-size: 20px;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 250px;
+}
+
+
+
+#add-btn:hover{
+    background-color: rgb(102, 32, 169);
+}
+
+
+
+/*الجزء اللي بيظهر*/
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+
+/*ستايل زر ال save*/
+#save-btn {
+    background-color: rgb(44, 222, 24);
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;   
+}
+
+#save-btn:hover{
+    background-color: rgb(24, 200, 5);
+}
+
+
+/*ستايل زر ال delet*/
+#cancel-btn {
+    background-color:rgb(218, 43, 31) ;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+
+#cancel-btn:hover{
+    background-color: rgb(198, 36, 36);
+}
+
+
+
+/*------------------------------------------------------ستايل الجزء بتاع ال delet-----------------------------------*/
+
+
+/*ستايل المودال*/
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*ستايل اللي جوا ال modal*/
+.modal-{
+    background-color: rgb(144, 101, 219);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.modal- p{
+    color: #ffffff;
+}
+
+
+
+/*ستايل زر انه بيأكد اال delet*/
+#confirmDeleteBtn{
+    background-color: rgb(44, 222, 24);
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/*ستايل الجزء اللي بي cancel ال delet*/
+#confirmDeleteBtn:hover{
+    background-color: rgb(24, 200, 5);
+}
+
+
+
+#cancelDeleteBtn{
+    background-color: rgb(218, 43, 31);
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*----------------------------ستايل رسايل النجاح-------------------------------------------*/
+
+
+
+
+/*لما يكون success */
+.toast .success i{
+margin: 0 20px;
+    font-size: 35px;
+    color: green;
+}
+
+/*لما يكون error*/
+.toast.error i{
+    margin: 0 20px;
+    font-size: 35px;
+color: red;
+}
+
+/*لما يكون success يعمل كالتالي*/
+.toast::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;/*عرض الشريط*/
+    height: 5px;/*طول الشريط*/
+    background-color: green;
+    animation:anim 5s linear forwards;/*خط بيعدي في 5 ثواني*/
+}
+
+
+/*هنا الشريط هيبدأ من الاول حالص وينتهي على الاخر خالص*/
+@keyframes anim{
+    100%{
+        width: 0;
+    }
+}
+
+
+/*حركته تكون للشمال*/
+@keyframes moveleft{
+    100%{
+         transform: translateX(0%);}
+    }
+.toast.error::after{
+    background-color: red;
+}
+
+
+
+
+/*ستايل البوكس بتاع المسدج*/
+#toastBox{
+position: absolute;
+bottom: 30px;
+right: 30px;
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+overflow: hidden;
+padding: 20px;
+}
+
+
+/*سنايل كل حاجة جوا البوكس بتاع المسدج*/
+.toast{
+    width: 400px;
+    height: 80px;
+    background: #ffffff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) ;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(100%);
+    animation: moveleft .5s linear forwards;
+}
+
+
+
+
+
+
+/*----------------------------------------ستايل الجزء بتاع age select---------------------------------------------*/
+
+
+
+
+
+.age-select { font-family: Arial; display:flex; justify-content:center; align-items:center; height:100vh; background:linear-gradient(to right, #8e44ad, #3498db);; }
+.box { background: white; padding:30px; border-radius:20px; box-shadow:0 0 10px rgba(0,0,0,0.2); text-align:center; }
+button { padding:15px 30px; font-size:18px; border:none; border-radius:10px; margin:10px; cursor:pointer; }
+.btn1 { background-color: blueviolet; color: white; }
+.btn1:hover{background-color:rgb(113, 67, 192);}
+.btn2 { background-color: blueviolet; color: white; }
+.btn2:hover{background-color:rgb(113, 67, 192);}
+
+
+
+
+/*-----------------------------------ستايل كل ال details-------------------------------------------*/
+
+
+
+
+.details {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    h1 {
+      color: rgb(82, 51, 136);
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+      margin-top: 25px;
+    }
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+    ul {
+      color: #555;
+      line-height: 1.8;
+    }
+    .apply-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color:blueviolet;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .apply-link:hover{
+     background-color: rgb(112, 21, 197);}
+    .note {
+      background: #fff8e1;
+      padding: 15px;
+      margin-top: 20px;
+      border-left: 4px solid #c899d2;
+    }
+
+
+
+
+    /*---------------------------------ستايل الفورم ------------------------------------------------*/
+
+
+
+
+
+.form { font-family: Arial; background: linear-gradient(to right, #8e44ad, #3498db);; margin:0; padding:125px; }
+.form-box { max-width:400px; margin:auto; background:white; padding:25px; border-radius:15px; box-shadow:0 0 12px rgba(0,0,0,0.15);}
+.h2 { text-align:center; color:rgb(82,51,136);}
+.label { display:block; margin-top:15px; font-weight:bold;}
+.input, .select { width:100%; padding:10px; margin-top:6px; border:1px solid #ccc; border-radius:8px;}
+.continue-btn { margin-top:20px; width:100%; padding:12px; background-color: blueviolet; color:white; border:none; border-radius:8px; cursor:pointer; font-size:16px;}
+.continue-btn:hover{background-color: rgb(106, 22, 185);}
+
+
+
+
+
+/*------------------------------------------------------ستايل ال catds--------------------------------------------------*/
+
+
+
+
+
+.above { font-family: Arial; background:#d4bddd; padding:20px; }
+.card { background:white; border-radius:20px; padding:20px; margin:20px auto; width:90%; max-width:500px; box-shadow:0 0 10px rgb(86, 22, 113) }
+.card img { width:100%; border-radius:15px; }
+.btn { display:block; margin-top:15px; padding:12px; background-color: blueviolet; color:white; text-align:center; border-radius:10px; text-emphasis-color: white; text-decoration:none; }
+.btn:hover{background-color: rgb(110, 24, 190);}
+
+
+
+
+
+/*------------------------------ستايل ال no result اللي هاظهر وقت السيرش----------------------------------------------*/
+
+
+#noResults {
+    color: rgb(104, 0, 143); 
+    background:white;
+    padding:10px;
+    width:fit-content;
+    margin:10px auto;
+    border-radius:10px;
+    font-weight: bold;
+}
+
+
+.page-title {
+    color: white;
+    background: rgb(82, 51, 136);     
+    padding: 15px 20px;
+    border-radius: 15px;          
+    width: fit-content;             
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}

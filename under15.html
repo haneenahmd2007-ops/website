@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>15 and Above</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="above">
+<h2 class="page-title">Activities & Scholarships</h2>
+<input type="text" id="activitySearch" placeholder="Search activities..." style="width:90%; max-width:1000px; padding:10px; border-radius:10px; margin:10px auto; display:block; border:none;">
+<p id="noResults" style="display:none;">No results found</p>
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61HhuAoVCdeTpVb3JEhpkw6gzrx86YRJJfA&s" alt="Activity">
+<h3>Digital Egypt Sprouts Initiative</h3>
+<p>Deadline: November 30, 2025</p>
+<a class="btn" href="details_un15_1.html">Enter</a>
+
+</div>
+
+
+
+<!----------------------------------جزء الجافا سكريبت---------------------------------------->
+
+<script>
+const searchInput=document.getElementById("activitySearch");
+const cards=document.querySelectorAll(".card");
+const noResults = document.getElementById("noResults");
+
+//وقت سيرش اليوزر هيحصل كالتالي
+searchInput.addEventListener("input", () => {
+    const term = searchInput.value.toLowerCase();//الحروف اللي اليوزر بيكتبها تتحول ل small
+    let found=false;//يخلي ال found false
+    
+    cards.forEach(card => {//وهو بيلف على الكروت
+        const title = card.querySelector("h3").innerText.toLowerCase();//بيشوف ال h3 بتاع الكروت
+        
+        if(title.includes(term)) {//لو الجزء اللي بيدور عليه لاقاه
+            card.style.display = "block";//يظهر الكارد 
+            found=true;//يخلي ال found ب true
+        } else {//لو لا
+            card.style.display = "none";//مش يظهر حاجة
+             
+        }
+ });
+
+ if(found) {//لو لاقاها
+        noResults.style.display = "none";//هيخفي ال no result
+    } else {//لو مش لاقاها
+        noResults.style.display = "block";//هيظهر مسدج no result
+    }
+});
+</script>
+
+
+</body>
+</html>
